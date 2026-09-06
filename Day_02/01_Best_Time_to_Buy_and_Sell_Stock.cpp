@@ -64,3 +64,14 @@ public:
         return maxProfit;
     }
 };
+int main() {
+    Solution solution;
+
+    vector<int> prices = {7, 1, 5, 3, 6, 4};
+
+    int result = solution.maxProfit(prices);
+
+    cout << "Maximum Profit: " << result << endl;
+
+    return 0;
+}
