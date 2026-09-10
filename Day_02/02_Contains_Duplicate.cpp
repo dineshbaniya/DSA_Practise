@@ -72,3 +72,16 @@ public:
     return false;
 }
 };
+
+int main() {
+    Solution solution;
+
+    vector<int> nums = {1, 2, 3, 1};
+
+    bool result = solution.containsDuplicate(nums);
+
+    cout << boolalpha;
+    cout << "Contains Duplicate: " << result << endl;
+
+    return 0;
+}
