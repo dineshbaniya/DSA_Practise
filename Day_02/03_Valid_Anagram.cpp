@@ -75,3 +75,16 @@ public:
         return true;
     }
 };
+int main() {
+    Solution solution;
+
+    string s = "anagram";
+    string t = "nagaram";
+
+    bool result = solution.isAnagram(s, t);
+
+    cout << boolalpha;
+    cout << "Is Anagram: " << result << endl;
+
+    return 0;
+}
