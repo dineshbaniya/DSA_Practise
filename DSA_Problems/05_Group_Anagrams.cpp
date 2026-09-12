@@ -20,7 +20,7 @@ Output:
 Note:
 The order of the output groups does not matter.
 */
-
+#include <iostream>
 #include <unordered_map>
 #include <algorithm>
 #include <vector>
@@ -49,3 +49,25 @@ for (auto& pair : mp) {
 return result;
     }
 };
+
+int main() {
+    Solution solution;
+
+    vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+
+    vector<vector<string>> result = solution.groupAnagrams(strs);
+
+    cout << "Grouped Anagrams:" << endl;
+
+    for (auto& group : result) {
+        cout << "[ ";
+
+        for (string word : group) {
+            cout << word << " ";
+        }
+
+        cout << "]" << endl;
+    }
+
+    return 0;
+}
